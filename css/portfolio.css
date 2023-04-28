@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+/* ################### BASIC HTML STYLING ####################### */
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+}
+html{
+    font-size: 62.5%;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+/* ########################### ASIDE BAR STYLING ######################## */
+#aside{
+    background-color: #2d2926ff;
+    height: 100vh;
+    width: 23%;
+    position: fixed;
+    z-index: 10;
+}
+#profile{
+    padding: 10rem 0;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+#img-box img{
+    width: 200px;
+    height: 200px;
+    border: 4px solid #fdff00;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+#img-box div img{
+    display: block;
+    margin: auto;
+}
+#text-box h1{
+    font-size: 3rem;
+    color: #f3c517;
+    font-weight: 500;
+}
+#text-box p{
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+#profile > div:not(:first-child){
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #fff;
+    border: 2px solid #fdff00;
+    padding: 1rem 3rem;
+    border-radius: 40px;
+    text-align: center;
+    margin-bottom: 2rem;
+    background-color: #3c380b;
+}
+#profile > div:not(:first-child):hover{
+    background-color: #f3c517;
+}
+#profile > div a{
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #fff;
+}
+#nav{
+    display: flex;
+}
+/* ##################### CONTENT PAGE 1 STYLING ######################## */
+#content{
+    height: 100vh;
+    margin-left: 23%;
+    background-color: #1a1a1a;
+    color: #fff;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+#content > div{
+    padding: 0 20rem;
+}
+#content > div > h1{
+    font-size: 4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+span{
+    color: #f3c517; 
+}
+#content > div >p:first-child{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+#content > div >p:not(:first-child){
+    font-size: 2.2rem;
+}
+.box{
+    border: 2px solid #fdff00;
+    display: inline-block;
+    background-color: #3c380b;
+    padding: 0.5rem 2.5rem;
+    border-radius: 40px;
+    margin-top: 2rem;
+}
+.box:hover{
+    background-color: #f3c517;
+}
+i{
+    padding-left: 1rem;
+    color: #fff;
+}
+.box a{
+    color: #fff;
+}
+#content .box1{
+    margin-right: 2rem;
+}
+.box1, .box2{
+    display: inline-block;
+    margin-top: 1rem;
+    border: 1px solid #000;
+    border-radius: 40%;
+    padding: 1rem;
+    background-color: #3c380b;
+    cursor: pointer;
+}
+.box1:hover, .box2:hover{
+    background-color: #f3c517;
+}
+/* ########################## ABOUT SECTION STYLING ###################### */
+#about-section{
+    height: 80vh;
+    margin-left: 23%;
+    background-color: #1a1a1a;
+    padding: 0 8rem;
+}
+#about-section > h1{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+    color: #fff;
+    border-bottom: .5px solid #fff;
+}
+#about-content{
+    display: flex;
+    justify-content: space-between;
+}
+#box1 p{
+    font-size: 2.2rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+#box1{
+    margin-top: 6rem;  
+}
+#box1 > div{
+    border: 2px solid #fdff00;
+    padding: 1rem 2rem;
+    text-align: center;
+    border-radius: 40px; 
+    background-color: #3c380b; 
+}
+.btn{
+    border: none;
+    background-color: #3c380b; 
+}
+.btn a{
+    color: #fff;
+    display: inline-block;
+    background-color: #3c380b; 
+    border: none;
+}
+.icon{
+    color: #fff;
+    cursor: pointer;
+}
+#box2{
+    display: flex;
+    margin-top: 4rem;  
+}
+#box2 > div{
+    margin-left: 3rem;
+}
+#box2 .container{
+    font-size: 2.2rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    background-color: #3c380b; 
+}
+.container > div{
+    font-size: 3rem;
+    color: #fff;
+    padding: .5rem;
+}
+.container > div:first-child{
+    font-weight: 700;
+}
+/* ####################### SKILLS ############################ */
+#skill-section{
+    height: 100vh;
+    margin-left: 23%;
+    background-color: #1a1a1a;
+    padding: 0 8rem;
+}
+#skill-section h1{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+    color: #fff;
+    border-bottom: .5px solid #fff;
+}
+#skill-content >div >img{
+    width: 250px;
+    height: 190px;
+}
+#skill-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    gap: 60px;
+    margin-top: 6rem;
+}
+#skill-content > div{
+    margin: auto;
+    border: 2px solid #fdff00;
+    background-color: #fff;
+}
+/* ########################### PROJECT SECTION STYLING ########################## */
+#project-section{
+    height: auto;
+    margin-left: 23%;
+    background-color: #1a1a1a;
+    padding: 0;
+}
+#project-section h1{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+    color: #fff;
+    border-bottom: .5px solid #fff;
+}
+#project-content > div img{
+    height: 300px;
+    width: 300px;
+    display: block;
+}
+.pah-web{
+    width: 350pxss;
+}
+.Portfolio-color1{
+    color: #ee9b1f;
+    font-size: 1.6rem;
+    margin-top: -1rem;
+    margin-left: -2rem;
+    margin-right: -2rem;
+}
+.Portfolio-color{
+    color: #ee9b1f;
+    font-size: 1.6rem;
+    margin-top: -1rem;
+    margin-left: -2rem;
+    margin-right: 5px;
+}
+#project-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    gap: 120px 40px;
+    margin-top: 6rem;
+}
+#project-content > div{
+    margin: auto;
+}
+.my-website{
+    position: relative;
+}
+.my-website::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.877);
+    opacity: 0;
+    z-index: 2;
+    
+    transform: scaleY(0);
+    transform-origin:100% 100%;
+    transition: all .3s ease-in-out;
+}
+.my-website > div{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    opacity: 0;
+    z-index: 5;
+    transform: translate(-50%, -50%);
+    transition: .3s all ease-in-out .1s;
+}
+.my-website:hover .boxes{
+    opacity: 1;
+    top: 50%;
+}
+.my-website:hover::after{
+    opacity: 1;
+    transform: scaleY(1);
+}
+.my-website > div a{
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 1rem 2rem;
+    border-radius: 40px;
+}
+/* ########################### CONTACT SECTION STYLING ##################### */
+
+#contact-section{
+    height: 100vh;
+    margin-left: 23%;
+    background-color: #1a1a1a;
+    padding: 0 8rem;
+}
+#contact-section h1{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+    color: #fff;
+    border-bottom: .5px solid #fff;
+}
+#contact-content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6rem;
+}
+.p1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+.p2{
+    font-size: 2.2rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+.icons{
+    color: #f3c517;
+}
+#form{
+    width: 600px;
+    height: 600px;
+}
+input[type = "text"]{
+    padding: 2rem;
+    width: 100%;
+    background-color: rgb(41, 36, 33); 
+    margin-bottom: 2rem;
+    border: none;
+}
+textarea{
+    width: 100%;
+    background-color: rgb(41, 36, 33); 
+    border: none;
+}
+#send{
+    border: 2px solid #fdff00;
+    background-color: #3c380b; 
+    padding: .8rem 3rem;
+    display: inline-block;
+    border-radius: 30px;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+#send input{
+    background-color: #3c380b; 
+    border: none; 
+    font-size: 2.2rem;
+    color: #fff;
+    text-transform: uppercase; 
+    cursor: pointer;
+}
+
+/* ########################### MEDIA QUERIES ########################### */
+@media all and (min-width: 1300px) and (max-width: 1600px){
+    html{
+        font-size: 60%;
+    }
+    #text-box > h1{
+        text-align: center;
+    }
+    #text-box > h1+p{
+        text-align: center;
+    }
+    #profile > div:not(:first-child){
+        font-size: 2rem;
+        font-weight: 400;
+        color: #fff;
+        border: 2px solid #fdff00;
+        padding: .8rem 1.6rem;
+        border-radius: 30px;
+        text-align: center;
+        margin-bottom: 2rem;
+        background-color: #3c380b;
+        width: 300px;
+    }
+    #content > div{
+        margin: auto;
+    }
+    #skill-content >div >img{
+        width: 180px;
+        height: 160px;
+    }
+    #profile {
+        padding: 5rem 0;
+    }
+    #text-box h1{
+        font-size: 2.5rem;
+    }
+    #text-box p{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    #aside{
+        width: 21%;
+    }
+    #project-section, #skill-section, #about-section, #content, #contact-section{
+        margin-left: 21%;
+    }
+    #project-content > div img {
+        height: 258px;
+        width: 270px;
+    }
+    .Portfolio-color1 {
+        font-size: 1.3rem;
+        margin-top: 1.5rem;
+    }
+    .Portfolio-color {
+        font-size: 1.3rem;
+        margin-top: 1.5rem;
+    }
+    #project-content{
+        gap: 45px 40px;
+    }
+}
